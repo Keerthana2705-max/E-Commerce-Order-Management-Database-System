@@ -211,28 +211,9 @@ The next phases of the project include:
 
 ## Author
 
-**Name:** ______________________
+**Name:**Keerthana.C
 
-**Register Number:** ______________________
-
-**Department:** ______________________
-
-**Course:** Database Management Systems (DBMS)
-
----
-
-## Submission
-
-**Week:** Week 1
-
-**Project:** E-Commerce Order Management Database System
-
-**Submission Files**
-
-- Requirement_Analysis_Report.pdf
-- Business_Requirement_Document.pdf
-- SRS_Document.pdf
-- README.md
+**Department:**II BCA-A 
 
 ---
 
