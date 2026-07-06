@@ -52,7 +52,7 @@ Week1/
 
 ## Documents Included
 
-### 1. Requirement_Analysis_Report.pdf
+### 1. Requirement Analysis Report.docx
 
 This document contains:
 
@@ -70,7 +70,7 @@ This document contains:
 
 ---
 
-### 2. Business_Requirement_Document.pdf
+### 2. Business Requirement Document.docx
 
 This document includes:
 
@@ -86,7 +86,7 @@ This document includes:
 
 ---
 
-### 3. SRS_Document.pdf
+### 3. SRS Document.docx
 
 Prepared following the Software Requirement Specification format.
 
