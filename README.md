@@ -208,8 +208,8 @@ The next phases of the project include:
 
 ## Author
 
-Name:Keerthana.C
-Department:II BCA-A ,Kamaraj College
+**Name:Keerthana.C
+**Department:II BCA-A ,Kamaraj College
 
 ---
 
