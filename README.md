@@ -184,7 +184,6 @@ The system is designed to satisfy the following quality requirements:
 ## Technologies
 
 - Documentation using Microsoft Word
-- PDF Format
 - GitHub Repository
 - Database Design (Upcoming Weeks)
 
@@ -209,9 +208,8 @@ The next phases of the project include:
 
 ## Author
 
-**Name:**Keerthana.C
-
-**Department:**II BCA-A 
+Name:Keerthana.C
+Department:II BCA-A ,Kamaraj College
 
 ---
 
