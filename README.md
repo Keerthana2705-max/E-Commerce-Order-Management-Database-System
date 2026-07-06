@@ -205,14 +205,12 @@ The next phases of the project include:
 - Report Generation
 
 ---
-
-## Author
-
-**Name:Keerthana.C
-**Department:II BCA-A ,Kamaraj College
-
----
-
 ## Declaration
 
 This project has been prepared as part of the academic coursework for the Database Management Systems course. The documents are based on the provided business scenario and mandatory core entities, following the project guidelines.
+
+---
+## Author
+
+##Name:Keerthana.C
+##Department:II BCA-A ,Kamaraj College
