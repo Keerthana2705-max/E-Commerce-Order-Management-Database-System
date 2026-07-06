@@ -36,8 +36,6 @@ The project uses the following mandatory entities:
 - Shipment
 - Review
 
-> **Note:** No entities or attributes have been added, removed, or renamed, as per the project guidelines.
-
 ---
 
 ## Repository Structure
