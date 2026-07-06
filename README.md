@@ -211,6 +211,5 @@ This project has been prepared as part of the academic coursework for the Databa
 
 ---
 ## Author
-
-##Name:Keerthana.C
-##Department:II BCA-A ,Kamaraj College
+<h3>Name:Keerthana.C</h3>
+<h3>Department:II BCA-A ,Kamaraj College</h3>
