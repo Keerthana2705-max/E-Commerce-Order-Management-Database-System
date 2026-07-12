@@ -205,6 +205,150 @@ The next phases of the project include:
 - Report Generation
 
 ---
+
+# Week 2 – Entity and Relationship Analysis
+
+## Project Title
+**E-Commerce Order Management Database System**
+
+---
+
+## Project Overview
+
+This repository contains the **Week 2** deliverables for the **E-Commerce Order Management Database System**. The objective of this phase is to analyze the entities required for the database, identify their attributes, define primary and foreign keys, and establish relationships between entities.
+
+The analysis is based on the Software Requirement Specification (SRS) prepared in **Week 1** and serves as the foundation for designing the Entity Relationship (ER) Diagram and implementing the database.
+
+---
+
+## Objectives
+
+- Identify all entities in the system.
+- List the attributes of each entity.
+- Define Primary Keys (PK) for every entity.
+- Identify Foreign Keys (FK) wherever applicable.
+- Specify attribute constraints such as NOT NULL, UNIQUE, DEFAULT, and CHECK.
+- Analyze relationships between entities.
+- Determine the cardinality of each relationship.
+- Prepare a complete Entity Relationship Analysis Report.
+
+---
+
+## Repository Structure
+
+```text
+Week2/
+│── Entity_Analysis_Report.pdf
+│── Entity_Relationship_Analysis.pdf
+│── README.md
+```
+
+---
+
+## Documents Included
+
+### 1. Entity_Analysis_Report.pdf
+
+This document contains:
+
+- Entity Identification
+- Entity Descriptions
+- Entity Attribute List
+- Primary Key Identification
+- Foreign Key Identification
+- Attribute Constraints
+- Entity Summary
+
+---
+
+### 2. Entity_Relationship_Analysis.pdf
+
+This document contains:
+
+- Relationship Analysis
+- Cardinality Analysis
+- Relationship Matrix
+- Business Rules
+- Relationship Summary
+- Conclusion
+
+---
+
+## Core Entities
+
+The project uses the following mandatory entities:
+
+1. Customer
+2. Category
+3. Product
+4. Supplier
+5. Order
+6. Order Details
+7. Payment
+8. Shipment
+9. Review
+
+> **Note:** All entities and attributes strictly follow the project guidelines. No additional entities or attributes have been added, removed, or renamed.
+
+---
+
+## Entity Relationships
+
+The following relationships are identified:
+
+| Parent Entity | Child Entity | Relationship |
+|---------------|-------------|--------------|
+| Customer | Order | One-to-Many |
+| Category | Product | One-to-Many |
+| Order | Order Details | One-to-Many |
+| Product | Order Details | One-to-Many |
+| Order | Payment | One-to-One |
+| Order | Shipment | One-to-One |
+| Customer | Review | One-to-Many |
+| Product | Review | One-to-Many |
+
+The **Many-to-Many** relationship between **Order** and **Product** is resolved using the **Order Details** entity.
+
+---
+
+## Key Features
+
+- Identification of all database entities
+- Attribute analysis
+- Primary Key and Foreign Key identification
+- Attribute constraints (NOT NULL, UNIQUE, DEFAULT, CHECK)
+- Relationship analysis
+- Cardinality analysis
+- Business rule documentation
+
+---
+
+## Learning Outcome
+
+By completing this activity, the database structure is clearly defined and ready for the next phase of the project, which includes:
+
+- Entity Relationship (ER) Diagram
+- Relational Schema
+- Database Normalization
+- SQL Table Creation
+- Data Insertion
+- Query Execution
+
+---
+
+## Technologies Used
+
+- Microsoft Word
+- PDF Documentation
+- GitHub
+- Database Management System (DBMS)
+
+---
+
+
+## Declaration
+
+This work has been prepared as part of the academic requirements for the Database Management Systems (DBMS) course. The analysis is based on the provided business scenario and follows the prescribed project guidelines using only the specified entities and attributes.
 ## Declaration
 
 This project has been prepared as part of the academic coursework for the Database Management Systems course. The documents are based on the provided business scenario and mandatory core entities, following the project guidelines.
