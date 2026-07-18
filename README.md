@@ -344,16 +344,6 @@ By completing this activity, the database structure is clearly defined and ready
 - Database Management System (DBMS)
 
 ---
-
-
-## Declaration
-
-This work has been prepared as part of the academic requirements for the Database Management Systems (DBMS) course. The analysis is based on the provided business scenario and follows the prescribed project guidelines using only the specified entities and attributes.
-## Declaration
-
-This project has been prepared as part of the academic coursework for the Database Management Systems course. The documents are based on the provided business scenario and mandatory core entities, following the project guidelines.
-
----
 ## Week 3 - Entity Relationship (ER) Diagram and Relational Schema Design
 
 Project Title E-Commerce Order Management Database System
@@ -434,6 +424,11 @@ Contains
 - Review
 
 ---
+## Declaration
+
+This work has been prepared as part of the academic requirements for the Database Management Systems (DBMS) course. The analysis is based on the provided business scenario and follows the prescribed project guidelines using only the specified entities and attributes.
+This project has been prepared as part of the academic coursework for the Database Management Systems course. The documents are based on the provided business scenario and mandatory core entities, following the project guidelines.
+
 ## Author
 
 <h3>Name:Keerthana.C</h3>
