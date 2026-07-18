@@ -354,6 +354,86 @@ This work has been prepared as part of the academic requirements for the Databas
 This project has been prepared as part of the academic coursework for the Database Management Systems course. The documents are based on the provided business scenario and mandatory core entities, following the project guidelines.
 
 ---
+## Week 3 - Entity Relationship (ER) Diagram and Relational Schema Design
+
+Project Title E-Commerce Order Management Database System
+---
+
+# Project Overview
+
+During this phase, the conceptual database design developed in Week 2 has been transformed into an **Entity Relationship (ER) Diagram** and a **Relational Schema**.
+
+The ER Diagram illustrates the entities, attributes, relationships, primary keys, foreign keys, cardinality, and participation constraints. The relational schema converts the conceptual model into logical database tables that will be implemented in the following weeks.
+
+---
+
+# Repository Structure
+
+```
+Week3/
+│── ER_Diagram.png
+│── Relational_Schema.pdf
+│── ER_Design_Report.pdf
+│── README.md
+```
+
+---
+
+# Files Included
+
+### ER_Diagram.png
+
+Contains the complete Entity Relationship Diagram showing:
+
+- Entities
+- Attributes
+- Primary Keys
+- Foreign Keys
+- Relationships
+- Cardinality
+- Participation Constraints
+
+---
+
+### Relational_Schema.pdf
+
+Contains
+
+- Relational Tables
+- Primary Keys
+- Foreign Keys
+- Relationship Mapping
+- Logical Database Structure
+
+---
+
+### ER_Design_Report.pdf
+
+Contains
+
+- Introduction
+- ER Design
+- Relationship Analysis
+- Cardinality Analysis
+- Participation Constraints
+- Relational Schema
+- Conclusion
+
+---
+
+# Core Entities
+
+- Customer
+- Category
+- Product
+- Supplier
+- Order
+- Order Details
+- Payment
+- Shipment
+- Review
+
+---
 ## Author
 
 <h3>Name:Keerthana.C</h3>
