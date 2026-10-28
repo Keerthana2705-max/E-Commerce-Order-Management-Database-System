@@ -777,6 +777,160 @@ Week 5 extends the E-Commerce Database Management System developed in Week 4 by 
 The module organizes payment records, connects payments with customer orders, tracks transaction statuses, and generates reports combining customer, order, and payment information.
 It also demonstrates payment method analysis, successful payment revenue calculations, average transaction amount calculations, and payment record verification.
 
+# Week 6 – Product Review and Rating Management System
+
+## 1. Project Overview
+
+The Product Review and Rating Management System is the sixth module of the E-Commerce Database System developed using MySQL.
+
+This module allows customers to submit product reviews and ratings. It stores customer feedback, connects reviews with the corresponding customers and products, and generates reports to analyze product quality and customer satisfaction.
+
+The system extends the existing `Ecommerce_Product_DB` database by introducing a new `Review` table.
+
+## 2. Objectives
+
+- Create and manage product reviews.
+- Store customer ratings and written feedback.
+- Establish relationships between Customer, Product, and Review tables.
+- Maintain data integrity using SQL constraints.
+- Prevent duplicate reviews for the same customer and product.
+- Calculate average product ratings.
+- Identify highly rated and poorly rated products.
+- Generate customer-wise and product-wise review reports.
+- Analyze customer satisfaction using SQL aggregate functions.
+
+## 3. Technologies Used
+
+- **Database:** MySQL
+- **Database Management Tool:** MySQL Workbench
+- **Query Language:** SQL
+- **Concepts:** Primary Key, Foreign Key, UNIQUE, NOT NULL, CHECK, DEFAULT, JOIN, GROUP BY, COUNT, AVG, and ORDER BY.
+
+## 4. Database Information
+
+**Database Name:** `Ecommerce_Product_DB`
+
+The project uses the existing Customer and Product tables and adds the Review table to manage customer feedback.
+
+### Tables Used
+
+| Table Name | Purpose |
+|---|---|
+| Customer | Stores customer information |
+| Product | Stores product information |
+| Review | Stores product reviews and ratings |
+
+## 5. Review Table Structure
+
+The Review table contains the following columns:
+
+| Column Name | Data Type | Description |
+|---|---|---|
+| Review_ID | INT | Unique identifier for each review |
+| Customer_ID | INT | Identifies the customer who submitted the review |
+| Product_ID | INT | Identifies the reviewed product |
+| Rating | INT | Customer rating from 1 to 5 |
+| Review_Text | VARCHAR(1000) | Written customer feedback |
+| Review_Date | DATE | Date of the review |
+
+### Constraints Applied
+
+- **PRIMARY KEY:** Uniquely identifies each review.
+- **FOREIGN KEY:** Links reviews to existing customers and products.
+- **NOT NULL:** Ensures essential review details are provided.
+- **UNIQUE:** Prevents a customer from reviewing the same product more than once, when configured on `(Customer_ID, Product_ID)`.
+- **CHECK:** Restricts ratings to the range of 1 to 5.
+- **DEFAULT:** Can automatically assign the current date when a review date is not provided.
+
+## 6. Entity Relationship
+
+The Review table connects Customer and Product.
+
+```text
+CUSTOMER (1)
+     |
+     | One-to-Many
+     |
+   REVIEW
+     |
+     | Many-to-One
+     |
+  PRODUCT (1)
+```
+
+### Relationships
+
+- One customer can submit reviews for multiple products.
+- One product can receive reviews from multiple customers.
+- Each review belongs to one customer and one product.
+
+The Customer and Product tables have a many-to-many relationship through the Review table.
+
+## 7. Sample Data
+
+The following sample records illustrate the review data used in this module.
+
+| Review_ID | Customer_ID | Product_ID | Rating |
+|---:|---:|---:|---:|
+| 5001 | 2001 | 101 | 5 |
+| 5002 | 2002 | 102 | 4 |
+| 5003 | 2003 | 104 | 3 |
+| 5004 | 2004 | 108 | 5 |
+| 5005 | 2005 | 112 | 4 |
+| 5006 | 2001 | 113 | 2 |
+| 5007 | 2002 | 106 | 5 |
+| 5008 | 2003 | 114 | 3 |
+| 5009 | 2004 | 111 | 4 |
+| 5010 | 2005 | 110 | 1 |
+
+**Note:** These are example records. The referenced Customer_ID and Product_ID values must exist in the respective tables before inserting the reviews.
+
+## 8. Functionalities
+
+### Review Management
+
+- Add new product reviews.
+- View all reviews.
+- Update review details.
+- Delete reviews when required.
+- Validate ratings.
+- Prevent duplicate customer-product reviews when the UNIQUE constraint is enabled.
+
+### Rating Analysis
+
+- Calculate average ratings for products.
+- Count reviews for each product.
+- Identify highly rated products.
+- Identify poorly rated products.
+- Display customer-wise review history.
+- Generate product-wise feedback reports.
+- Analyze the distribution of 1-star to 5-star ratings.
+
+## 9. SQL Concepts Practiced
+
+This module demonstrates the following SQL concepts:
+
+1. `CREATE TABLE` – Creates the Review table.
+2. `INSERT INTO` – Adds customer reviews.
+3. `SELECT` – Retrieves review information.
+4. `UPDATE` – Modifies existing review details.
+5. `DELETE` – Removes unwanted reviews.
+6. `JOIN` – Combines review information with customer and product details.
+7. `GROUP BY` – Groups reviews for rating analysis.
+8. `COUNT()` – Counts reviews for each product.
+9. `AVG()` – Calculates average product ratings.
+10. `ORDER BY` – Sorts products by their ratings.
+11. Constraints – Maintain data accuracy and consistency.
+
+## 10. Conclusion
+
+The Product Review and Rating Management System provides an organized method for collecting, storing, and analyzing customer feedback in an e-commerce database.
+
+By using SQL tables, relationships, constraints, and aggregate functions, the module helps maintain reliable review records and generate meaningful product rating reports.
+
+This module strengthens the existing E-Commerce Database System by introducing customer feedback analysis and supporting better product evaluation and business decisions.
+
+---
 ## Declaration
 
 This work has been prepared as part of the academic requirements for the Database Management Systems (DBMS) course. The analysis is based on the provided business scenario and follows the prescribed project guidelines using only the specified entities and attributes.
