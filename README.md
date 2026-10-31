@@ -931,6 +931,147 @@ By using SQL tables, relationships, constraints, and aggregate functions, the mo
 This module strengthens the existing E-Commerce Database System by introducing customer feedback analysis and supporting better product evaluation and business decisions.
 
 ---
+
+# Week 7 – SQL Query Implementation for E-Commerce Database
+
+## 1. Project Overview
+
+This project focuses on implementing SQL queries for an E-Commerce database using MySQL. It demonstrates how to retrieve, filter, sort, and analyze data stored in different database tables.
+
+The project helps understand basic SQL commands and their practical applications in product search, customer information retrieval, order management, and business reporting.
+
+## 2. Objectives
+
+- Retrieve customer, product, order, and payment information.
+- Apply filtering conditions using the `WHERE` clause.
+- Sort records using `ORDER BY`.
+- Retrieve unique values using `DISTINCT`.
+- Search products based on price, name, category, and stock availability.
+- Retrieve related customer and product information.
+- Apply SQL operators such as `AND`, `OR`, `BETWEEN`, `LIKE`, and `IN`.
+- Generate basic business reports using aggregate functions.
+
+## 3. Technologies Used
+
+- **Database:** MySQL
+- **Tool:** MySQL Workbench
+- **Language:** SQL
+
+## 4. Database Name
+
+`Ecommerce_Product_DB`
+
+## 5. Tables Used
+
+The project uses the following database tables:
+
+- `Customer` – Stores customer information.
+- `Product` – Stores product names, prices, and stock quantities.
+- `Category` – Stores product category information.
+- `Orders` – Stores customer order details and order status.
+- `Order_Details` – Stores products and quantities associated with orders.
+- `Payment` – Stores payment methods and payment statuses.
+- `Review` – Stores product ratings and customer reviews.
+- `Inventory` – Stores inventory-related information, if available in the database.
+
+## 6. SQL Concepts Implemented
+
+### Basic SQL Queries
+Used `SELECT` to retrieve customer details, products, orders, and payment records.
+
+### Filtering Conditions
+Used `WHERE` to filter products by price, identify available products, and retrieve records matching specific conditions.
+
+### Sorting Data
+Used `ORDER BY` to display products by price and customers alphabetically.
+
+### Unique Values
+Used `DISTINCT` to retrieve unique category IDs, payment methods, and other available values.
+
+### Product Search
+Used `BETWEEN` for price ranges and `LIKE` for searching product names.
+
+### Multiple Conditions
+Applied `AND`, `OR`, `IN`, and other SQL operators to filter records based on multiple criteria.
+
+### Aggregate Functions
+Used functions such as `COUNT()`, `AVG()`, and `GROUP BY` to summarize customer, order, and product information.
+
+### Business Reports
+Generated reports covering product availability, customer information, order status, and product performance.
+
+## 7. Sample SQL Queries
+
+### Display All Products
+
+```sql
+USE Ecommerce_Product_DB;
+
+SELECT * FROM Product;
+```
+
+### Products Priced Between ₹1,000 and ₹5,000
+
+```sql
+SELECT *
+FROM Product
+WHERE Price BETWEEN 1000 AND 5000;
+```
+
+### Products Available in Stock
+
+```sql
+SELECT *
+FROM Product
+WHERE Stock_Quantity > 0;
+```
+
+### Search Products by Name
+
+```sql
+SELECT *
+FROM Product
+WHERE Product_Name LIKE '%Mobile%';
+```
+
+### Display Products from Lowest to Highest Price
+
+```sql
+SELECT *
+FROM Product
+ORDER BY Price ASC;
+```
+
+### Count Total Customers
+
+```sql
+SELECT COUNT(*) AS Total_Customers
+FROM Customer;
+```
+
+## 8. Business Reports
+
+The project includes the following reports:
+
+1. **Product Availability Report:** Displays product names, prices, stock quantities, and availability status.
+2. **Customer Report:** Displays customer information and calculates the total number of customers.
+3. **Order Report:** Summarizes total, completed, pending, and cancelled orders.
+4. **Product Performance Report:** Identifies the highest-priced products, most-reviewed products, and available products.
+
+## 9. Learning Outcomes
+
+- Gained practical experience in writing SQL queries.
+- Understood how to filter and sort database records.
+- Learned to retrieve unique values and search for specific products.
+- Practiced aggregate functions for summarizing information.
+- Developed an understanding of basic e-commerce business reporting.
+- Improved database querying and data analysis skills.
+
+## 10. Conclusion
+
+The Week 7 project demonstrates the practical use of SQL queries for managing and analyzing e-commerce data. It provides a foundation for database operations, product searches, customer information retrieval, and basic business analysis using MySQL.
+
+
 ## Declaration
 
 This work has been prepared as part of the academic requirements for the Database Management Systems (DBMS) course. The analysis is based on the provided business scenario and follows the prescribed project guidelines using only the specified entities and attributes.
