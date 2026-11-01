@@ -1071,6 +1071,105 @@ The project includes the following reports:
 
 The Week 7 project demonstrates the practical use of SQL queries for managing and analyzing e-commerce data. It provides a foundation for database operations, product searches, customer information retrieval, and basic business analysis using MySQL.
 
+# Week 8: SQL JOIN Operations
+
+## E-Commerce Product Database Management System
+
+### 1. Project Overview
+
+This project demonstrates SQL JOIN operations using the `Ecommerce_Product_DB` database. It combines related information from multiple tables to generate meaningful reports for an e-commerce business.
+
+The project uses `INNER JOIN`, `LEFT JOIN`, and `RIGHT JOIN` to retrieve customer details, order information, product details, and payment records.
+
+### 2. Database Information
+
+**Database Name:** `Ecommerce_Product_DB`
+
+**Tables Used:**
+- `Customer`
+- `Orders`
+- `Product`
+- `Order_Details`
+- `Payment`
+
+### 3. Objectives
+
+- Understand and implement SQL JOIN operations.
+- Retrieve customer and order details from multiple tables.
+- Identify customers who have not placed orders.
+- Identify products that have not been ordered.
+- Generate complete order reports.
+- Display customer purchase histories.
+- Analyze product sales and payment statuses.
+
+### 4. SQL JOIN Operations
+
+#### INNER JOIN
+Returns only records that have matching values in both tables.
+
+**Examples:**
+- Customer and order details.
+- Order and payment details.
+- Customer, order, and product details.
+
+#### LEFT JOIN
+Returns all records from the left table and matching records from the right table. Unmatched right-table values appear as `NULL`.
+
+**Examples:**
+- All customers and their orders.
+- Customers who have not placed orders.
+- Products with or without order details.
+
+#### RIGHT JOIN
+Returns all records from the right table and matching records from the left table. Unmatched left-table values appear as `NULL`.
+
+**Examples:**
+- All orders and customer details.
+- Orders without matching customer records.
+- All payments and their order details.
+
+### 5. Reports Generated
+
+1. **Complete Order Report** – Displays customer details, order IDs, product names, quantities, order dates, calculated item amounts, and payment status.
+2. **Customer Purchase History** – Displays customers and their purchased products.
+3. **Product Sales Summary** – Calculates the total quantity sold and sales amount for each product.
+4. **Customer Order Summary** – Counts the orders placed by each customer.
+5. **Payment Status Report** – Summarizes payment records by status.
+6. **Orders With Payment Information** – Displays order details and available payment information.
+
+### 6. Output Column Aliases
+
+Customer details are displayed using the following aliases:
+
+- `Customer_ID AS c_id`
+- `Customer_Name AS c_name`
+
+These aliases change only the column labels in the query output. They do not rename the actual database columns.
+
+### 7. How to Execute
+
+1. Open MySQL Workbench.
+2. Connect to your MySQL server.
+3. Select the database:
+
+   ```sql
+   USE Ecommerce_Product_DB;
+   ```
+
+4. Ensure that the required tables and their relationships exist.
+5. Execute each SQL JOIN query.
+6. Check the result grid to verify the output.
+7. Capture screenshots of the queries and results if required for submission.
+
+### 8. Expected Results
+
+The queries help retrieve related information from different tables and generate useful e-commerce reports. The exact output depends on the records available in the database. Queries that search for unmatched records may return no rows if all relationships are valid.
+
+### 9. Conclusion
+
+This assignment provides practical experience with SQL JOIN operations. `INNER JOIN`, `LEFT JOIN`, and `RIGHT JOIN` help combine related data from multiple tables and support customer analysis, order tracking, product sales reporting, and payment monitoring.
+
+The project demonstrates how SQL JOINs can improve data retrieval and help businesses make informed decisions based on organized database information.
 
 ## Declaration
 
